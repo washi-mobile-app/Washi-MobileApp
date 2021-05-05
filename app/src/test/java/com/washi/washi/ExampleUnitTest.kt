@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.washi.washi
 
 import org.junit.Test
 
