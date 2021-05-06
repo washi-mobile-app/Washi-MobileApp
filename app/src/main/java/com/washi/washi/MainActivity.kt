@@ -7,27 +7,27 @@ import android.os.Bundle
 import android.view.*
 import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.gson.Gson
 import com.washi.washi.entities.Laundry
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.prototype_laundry_card.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnItemClickListener {
+    override fun OnItemClicked(laundry: Laundry) {
+        val intent = Intent(this, OrderActivity::class.java)
+        val gson = Gson()
+        intent.putExtra("laundry", gson.toJson(laundry))
+        startActivity(intent)
+    }
     val REQUEST_CODE = 1
     var laundries = ArrayList<Laundry>()
     var laundriesToShow = ArrayList<Laundry>()
-    var laundryAdapter = LaundryAdapter(laundriesToShow)
+    var laundryAdapter = LaundryAdapter(laundriesToShow, this)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         loadLaundries()
         initView()
-
-        val view = layoutInflater.inflate(R.layout.prototype_laundry_card, null)
-        val button = view.findViewById<Button>(R.id.btViewLaundry)
-        button.setOnClickListener() {
-            val intent = Intent(this, OrderActivity::class.java)
-            startActivity(intent)
-        }
     }
 
     private fun initView() {

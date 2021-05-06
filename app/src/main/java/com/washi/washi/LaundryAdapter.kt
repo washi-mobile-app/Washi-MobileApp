@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.washi.washi.entities.Laundry
 import kotlinx.android.synthetic.main.prototype_laundry_card.view.*
 
-class LaundryAdapter(var laundries: ArrayList<Laundry>): RecyclerView.Adapter<LaundryPrototype>() {
+class LaundryAdapter(var laundries: ArrayList<Laundry>, val itemClickListener: OnItemClickListener): RecyclerView.Adapter<LaundryPrototype>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LaundryPrototype {
         val view = LayoutInflater
             .from(parent.context)
@@ -17,7 +17,7 @@ class LaundryAdapter(var laundries: ArrayList<Laundry>): RecyclerView.Adapter<La
     }
 
     override fun onBindViewHolder(contactPrototype: LaundryPrototype, position: Int) {
-        contactPrototype.bind(laundries.get(position))
+        contactPrototype.bind(laundries.get(position), itemClickListener)
     }
 
     override fun getItemCount(): Int {
@@ -29,11 +29,18 @@ class LaundryPrototype(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val tvName = itemView.tvLaundryName
     val tvAddress = itemView.tvLaundryAddress
     val tvPrice = itemView.tvLaundryPrice
+    val btViewLaundry = itemView.btViewLaundry
 
-
-    fun bind(laundry: Laundry){
+    fun bind(laundry: Laundry, itemClickListener: OnItemClickListener){
         tvName.text = laundry.name
         tvAddress.text = laundry.address
         tvPrice.text = "S/. " + laundry.price.toString() + " x Kg"
+        btViewLaundry.setOnClickListener {
+            itemClickListener.OnItemClicked(laundry)
+        }
     }
+}
+
+interface OnItemClickListener{
+    fun OnItemClicked(laundry: Laundry)
 }
