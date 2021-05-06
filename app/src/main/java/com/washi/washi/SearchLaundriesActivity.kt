@@ -1,5 +1,7 @@
 package com.washi.washi
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
@@ -20,5 +22,14 @@ class SearchLaundriesActivity : AppCompatActivity() {
         val name = etLaundryName.text.toString()
         val address = etLaundryAddress.text.toString()
         val price = etLaundryPrice.text.toString()
+
+        val intent = Intent()
+        intent.putExtra("name", name)
+        intent.putExtra("address", address)
+        intent.putExtra("price", price)
+
+
+        setResult(Activity.RESULT_OK, intent)
+        finish()
     }
 }
