@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         initView()
 
         cvLaundryCard.setOnClickListener() {
-            val intent = Intent(this, SearchLaundriesActivity::class.java)
+            val intent = Intent(this, OrderActivity::class.java)
             startActivity(intent)
         }
     }
