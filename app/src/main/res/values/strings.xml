@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">WashiMobileApp</string>
+    <string name="agregar">Agregar</string>
+    <string name="kilogramos">Kilogramos:</string>
+    <string name="precio_por_kg">Precio por Kg:</string>
+    <string name="detalle_de_la_orden">Detalle de la orden</string>
+    <string name="wash_it">Wash it!</string>
     <string name="lavander_as">Lavanderías</string>
     <string name="buscar_lavander_as">Buscar Lavanderías</string>
     <string name="textview1">TextView</string>
