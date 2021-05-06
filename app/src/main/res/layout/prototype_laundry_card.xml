@@ -14,8 +14,8 @@
 
     <ImageView
         android:id="@+id/imgLaundry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         android:layout_width="239dp"
         android:layout_height="21dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/textview2"
         android:textAlignment="viewStart"
         app:layout_constraintStart_toEndOf="@+id/imgLaundry"
@@ -51,10 +51,22 @@
         android:layout_width="239dp"
         android:layout_height="21dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:text="@string/textview3"
         android:textAlignment="viewStart"
         app:layout_constraintStart_toEndOf="@+id/imgLaundry"
         app:layout_constraintTop_toBottomOf="@+id/tvLaundryAddress" />
+
+    <Button
+        android:id="@+id/btViewLaundry"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLaundryPrice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

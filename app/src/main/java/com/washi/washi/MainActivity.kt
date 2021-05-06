@@ -4,9 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
+import android.view.*
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.washi.washi.entities.Laundry
 import kotlinx.android.synthetic.main.activity_main.*
@@ -23,7 +22,9 @@ class MainActivity : AppCompatActivity() {
         loadLaundries()
         initView()
 
-        cvLaundryCard.setOnClickListener() {
+        val view = layoutInflater.inflate(R.layout.prototype_laundry_card, null)
+        val button = view.findViewById<Button>(R.id.btViewLaundry)
+        button.setOnClickListener() {
             val intent = Intent(this, OrderActivity::class.java)
             startActivity(intent)
         }
