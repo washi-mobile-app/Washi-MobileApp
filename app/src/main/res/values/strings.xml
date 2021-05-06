@@ -19,4 +19,19 @@
     <string name="textview6">TextView</string>
     <string name="textview7">TextView</string>
     <string name="textview8">TextView</string>
+    <string-array name="servicios">
+        <item>Lavado de agua</item>
+        <item>Lavado al seco</item>
+        <item>Lavado a mano</item>
+        <item>Planchado</item>
+    </string-array>
+    <string-array name="materiales">
+        <item>Algodon</item>
+        <item>Lino</item>
+        <item>Poliester</item>
+        <item>Lana</item>
+        <item>Seda</item>
+        <item>Nylon</item>
+        <item>Licra</item>
+    </string-array>
 </resources>
