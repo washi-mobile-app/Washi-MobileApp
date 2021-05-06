@@ -10,6 +10,7 @@ import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.washi.washi.entities.Laundry
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.prototype_laundry_card.*
 
 class MainActivity : AppCompatActivity() {
     val REQUEST_CODE = 1
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         loadLaundries()
         initView()
+
+        cvLaundryCard.setOnClickListener() {
+            val intent = Intent(this, SearchLaundriesActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun initView() {
