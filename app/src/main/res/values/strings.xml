@@ -5,4 +5,13 @@
     <string name="precio_por_kg">Precio por Kg:</string>
     <string name="detalle_de_la_orden">Detalle de la orden</string>
     <string name="wash_it">Wash it!</string>
+    <string name="lavander_as">Lavanderías</string>
+    <string name="buscar_lavander_as">Buscar Lavanderías</string>
+    <string name="textview">TextView</string>
+    <string name="textview">TextView</string>
+    <string name="textview">TextView</string>
+    <string name="nombre_de_lavander_a">Nombre de Lavandería</string>
+    <string name="localizaci_n">Localización</string>
+    <string name="precio">Precio</string>
+    <string name="buscar">Buscar</string>
 </resources>
