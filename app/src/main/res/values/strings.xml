@@ -20,6 +20,9 @@
     <string name="textview6">TextView</string>
     <string name="textview7">TextView</string>
     <string name="textview8">TextView</string>
+    <string name="nombre_de_servicio">nombre de servicio</string>
+    <string name="precio_por_servicio">precio por servicio</string>
+    <string name="kg">kg</string>
     <string-array name="servicios">
         <item>Lavado de agua</item>
         <item>Lavado al seco</item>
