@@ -1,4 +1,4 @@
-package com.washi.washi
+package com.example.wahiapp
 
 import org.junit.Test
 

@@ -1,41 +1,19 @@
 <resources>
     <string name="app_name">WashiMobileApp</string>
-    <string name="agregar">Agregar</string>
-    <string name="kilogramos">Kilogramos:</string>
-    <string name="precio_por_kg">Precio por Kg:</string>
-    <string name="detalle_de_la_orden">Detalle de la orden</string>
-    <string name="wash_it">Wash it!</string>
-    <string name="lavander_as">Lavanderías</string>
-    <string name="buscar_lavander_as">Buscar Lavanderías</string>
-    <string name="textview1">TextView</string>
-    <string name="textview2">TextView</string>
-    <string name="textview3">TextView</string>
-    <string name="nombre_de_lavander_a">Nombre de Lavandería</string>
-    <string name="localizaci_n">Localización</string>
-    <string name="precio">Precio</string>
-    <string name="buscar">Buscar</string>
-    <string name="ver">Ver</string>
-    <string name="textview4">TextView</string>
-    <string name="textview5">TextView</string>
-    <string name="textview6">TextView</string>
-    <string name="textview7">TextView</string>
-    <string name="textview8">TextView</string>
-    <string name="nombre_de_servicio">nombre de servicio</string>
-    <string name="precio_por_servicio">precio por servicio</string>
-    <string name="kg">kg</string>
-    <string-array name="servicios">
-        <item>Lavado de agua</item>
-        <item>Lavado al seco</item>
-        <item>Lavado a mano</item>
-        <item>Planchado</item>
-    </string-array>
-    <string-array name="materiales">
-        <item>Algodon</item>
-        <item>Lino</item>
-        <item>Poliester</item>
-        <item>Lana</item>
-        <item>Seda</item>
-        <item>Nylon</item>
-        <item>Licra</item>
-    </string-array>
+    <string name="pedidos">Pedidos</string>
+    <string name="costUno">S/.10.00</string>
+    <string name="costDos">S/.17.60</string>
+    <string name="TituloDetalle">Detalle del Pedido</string>
+    <string name="estado">Estado:</string>
+    <string name="lavanderia">Lavandería:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="fecha_entrega">Fecha de entrega:</string>
+    <string name="total">Total:</string>
+    <string name="servicioUno">Lavado al seco de lana x 1kg</string>
+    <string name="ServicioDos">Lavado en agua de algodón x 2kg</string>
+    <string name="servicioTres">Lavado de zapatillas de tela x 1 par</string>
+    <string name="ServicioCuatro">Delivery</string>
+    <string name="costoTres">S/: 12.00</string>
+    <string name="costoCuatro">S/. 5.00</string>
+    <string name="regresar">Regresar</string>
 </resources>
