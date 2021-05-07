@@ -1,4 +1,4 @@
-package com.example.wahiapp
+package com.example.washimobileapp
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.wahiapp.R
+import com.example.washimobileapp.entities.Order
 
-class OrderAdapter(var orders: ArrayList<Order>,  val itemClickListener: OnItemClickListener): RecyclerView.Adapter<OrderPrototype> () {
+class OrderAdapter(var orders: ArrayList<Order>, val itemClickListener: OnItemClickListener): RecyclerView.Adapter<OrderPrototype> () {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OrderPrototype {
         //con esto cada elemento se inflara en un prototype y se mostrar en el recycle view
         val view = LayoutInflater

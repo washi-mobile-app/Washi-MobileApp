@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderDetail">
+    tools:context="com.example.washimobileapp.OrderDetail">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
             android:text="@string/costDos"
             app:layout_constraintBaseline_toBaselineOf="@+id/nameTwo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintHorizontal_bias="0.509"
             app:layout_constraintStart_toEndOf="@+id/nameTwo" />
 
         <TextView
@@ -50,7 +50,7 @@
             app:layout_constraintVertical_bias="0.046" />
 
         <TextView
-            android:id="@+id/tvEstadoD"
+            android:id="@+id/tvE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -62,25 +62,24 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.061"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvFechaEntregaD"
+            app:layout_constraintTop_toBottomOf="@+id/tvFE"
             app:layout_constraintVertical_bias="0.019" />
 
         <TextView
             android:id="@+id/tvNombreD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="28dp"
-            android:text="@string/lavanderia"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.074"
+            android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitleDetail" />
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleDetail"
+            tools:text="Nombre de lavanderia " />
 
         <TextView
-            android:id="@+id/tvFechaD"
+            android:id="@+id/tvF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -94,7 +93,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvNombreD" />
 
         <TextView
-            android:id="@+id/tvFechaEntregaD"
+            android:id="@+id/tvFE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -103,15 +102,15 @@
             android:textColor="#000000"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvFechaD" />
+            app:layout_constraintTop_toBottomOf="@+id/tvF" />
 
         <TextView
-            android:id="@+id/tvCostoD"
+            android:id="@+id/tvC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="109dp"
+            android:layout_marginTop="36dp"
             android:layout_marginBottom="140dp"
             android:text="@string/total"
             android:textColor="#000000"
@@ -120,17 +119,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.079"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameFour" />
+            app:layout_constraintTop_toBottomOf="@+id/nameFour"
+            app:layout_constraintVertical_bias="0.256" />
 
         <TextView
             android:id="@+id/nameOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="36dp"
             android:text="@string/servicioUno"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvEstadoD" />
+            app:layout_constraintTop_toBottomOf="@+id/tvE" />
 
         <TextView
             android:id="@+id/nameTwo"
@@ -189,13 +189,56 @@
             android:id="@+id/btRegresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="36dp"
             android:onClick="goBack"
             android:text="@string/regresar"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvCostoD"
-            app:layout_constraintVertical_bias="0.304" />
+            app:layout_constraintTop_toBottomOf="@+id/tvCostoD" />
+
+        <TextView
+            android:id="@+id/tvFechaD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:text="@string/fecha"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvF"
+            app:layout_constraintStart_toEndOf="@+id/tvF" />
+
+        <TextView
+            android:id="@+id/tvFechaEntregaD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:text="@string/fecha_entrega"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvFE"
+            app:layout_constraintStart_toEndOf="@+id/tvFE" />
+
+        <TextView
+            android:id="@+id/tvEstadoD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:text="@string/estado"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvE"
+            app:layout_constraintStart_toEndOf="@+id/tvE" />
+
+        <TextView
+            android:id="@+id/tvCostoD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:text="@string/total"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvC"
+            app:layout_constraintStart_toEndOf="@+id/tvC" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

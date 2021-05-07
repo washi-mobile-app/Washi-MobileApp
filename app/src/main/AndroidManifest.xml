@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WahiApp">
-        <activity android:name=".OrderDetail">
-
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".LaundryDetailActivity"></activity>
+        <activity android:name=".SearchLaundriesActivity" />
+        <activity android:name=".LaundryActivity" />
+        <activity android:name="com.example.washimobileapp.OrderDetail" />
+        <activity android:name="com.example.washimobileapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
